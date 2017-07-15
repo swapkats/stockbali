@@ -321,3 +321,303 @@ Migrating to CreateStocks (20170715095643)
   [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "at nam consequatur ea labore ea harum"], ["created_at", "2017-07-15 10:01:58.168926"], ["updated_at", "2017-07-15 10:01:58.168926"]]
   [1m[35m (8.3ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mStock Load (0.8ms)[0m  [1m[34mSELECT  "stocks".* FROM "stocks" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "sunt aut facere repellat provident occaecati excepturi optio reprehenderit"], ["created_at", "2017-07-15 10:46:38.449541"], ["updated_at", "2017-07-15 10:46:38.449541"]]
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "qui est esse"], ["created_at", "2017-07-15 10:46:38.468087"], ["updated_at", "2017-07-15 10:46:38.468087"]]
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "ea molestias quasi exercitationem repellat qui ipsa sit aut"], ["created_at", "2017-07-15 10:46:38.477560"], ["updated_at", "2017-07-15 10:46:38.477560"]]
+  [1m[35m (7.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "eum et est occaecati"], ["created_at", "2017-07-15 10:46:38.486622"], ["updated_at", "2017-07-15 10:46:38.486622"]]
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "nesciunt quas odio"], ["created_at", "2017-07-15 10:46:38.497321"], ["updated_at", "2017-07-15 10:46:38.497321"]]
+  [1m[35m (40.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "dolorem eum magni eos aperiam quia"], ["created_at", "2017-07-15 10:46:38.541885"], ["updated_at", "2017-07-15 10:46:38.541885"]]
+  [1m[35m (106.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.8ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "magnam facilis autem"], ["created_at", "2017-07-15 10:46:38.653391"], ["updated_at", "2017-07-15 10:46:38.653391"]]
+  [1m[35m (8.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "dolorem dolore est ipsam"], ["created_at", "2017-07-15 10:46:38.671417"], ["updated_at", "2017-07-15 10:46:38.671417"]]
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "nesciunt iure omnis dolorem tempora et accusantium"], ["created_at", "2017-07-15 10:46:38.684225"], ["updated_at", "2017-07-15 10:46:38.684225"]]
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "optio molestias id quia eum"], ["created_at", "2017-07-15 10:46:38.704282"], ["updated_at", "2017-07-15 10:46:38.704282"]]
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "et ea vero quia laudantium autem"], ["created_at", "2017-07-15 10:46:38.721358"], ["updated_at", "2017-07-15 10:46:38.721358"]]
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "in quibusdam tempore odit est dolorem"], ["created_at", "2017-07-15 10:46:38.737228"], ["updated_at", "2017-07-15 10:46:38.737228"]]
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "dolorum ut in voluptas mollitia et saepe quo animi"], ["created_at", "2017-07-15 10:46:38.752696"], ["updated_at", "2017-07-15 10:46:38.752696"]]
+  [1m[35m (9.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "voluptatem eligendi optio"], ["created_at", "2017-07-15 10:46:38.766918"], ["updated_at", "2017-07-15 10:46:38.766918"]]
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "eveniet quod temporibus"], ["created_at", "2017-07-15 10:46:38.777855"], ["updated_at", "2017-07-15 10:46:38.777855"]]
+  [1m[35m (8.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "sint suscipit perspiciatis velit dolorum rerum ipsa laboriosam odio"], ["created_at", "2017-07-15 10:46:38.792611"], ["updated_at", "2017-07-15 10:46:38.792611"]]
+  [1m[35m (9.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "fugit voluptas sed molestias voluptatem provident"], ["created_at", "2017-07-15 10:46:38.807894"], ["updated_at", "2017-07-15 10:46:38.807894"]]
+  [1m[35m (8.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "voluptate et itaque vero tempora molestiae"], ["created_at", "2017-07-15 10:46:38.828881"], ["updated_at", "2017-07-15 10:46:38.828881"]]
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "adipisci placeat illum aut reiciendis qui"], ["created_at", "2017-07-15 10:46:38.848385"], ["updated_at", "2017-07-15 10:46:38.848385"]]
+  [1m[35m (9.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "doloribus ad provident suscipit at"], ["created_at", "2017-07-15 10:46:38.861803"], ["updated_at", "2017-07-15 10:46:38.861803"]]
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "asperiores ea ipsam voluptatibus modi minima quia sint"], ["created_at", "2017-07-15 10:46:38.872776"], ["updated_at", "2017-07-15 10:46:38.872776"]]
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "dolor sint quo a velit explicabo quia nam"], ["created_at", "2017-07-15 10:46:38.882186"], ["updated_at", "2017-07-15 10:46:38.882186"]]
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "maxime id vitae nihil numquam"], ["created_at", "2017-07-15 10:46:38.893469"], ["updated_at", "2017-07-15 10:46:38.893469"]]
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "autem hic labore sunt dolores incidunt"], ["created_at", "2017-07-15 10:46:38.904294"], ["updated_at", "2017-07-15 10:46:38.904294"]]
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "rem alias distinctio quo quis"], ["created_at", "2017-07-15 10:46:38.913549"], ["updated_at", "2017-07-15 10:46:38.913549"]]
+  [1m[35m (9.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "est et quae odit qui non"], ["created_at", "2017-07-15 10:46:38.924661"], ["updated_at", "2017-07-15 10:46:38.924661"]]
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "quasi id et eos tenetur aut quo autem"], ["created_at", "2017-07-15 10:46:38.934201"], ["updated_at", "2017-07-15 10:46:38.934201"]]
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "delectus ullam et corporis nulla voluptas sequi"], ["created_at", "2017-07-15 10:46:38.943496"], ["updated_at", "2017-07-15 10:46:38.943496"]]
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "iusto eius quod necessitatibus culpa ea"], ["created_at", "2017-07-15 10:46:38.952928"], ["updated_at", "2017-07-15 10:46:38.952928"]]
+  [1m[35m (12.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "a quo magni similique perferendis"], ["created_at", "2017-07-15 10:46:38.966845"], ["updated_at", "2017-07-15 10:46:38.966845"]]
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "ullam ut quidem id aut vel consequuntur"], ["created_at", "2017-07-15 10:46:38.980169"], ["updated_at", "2017-07-15 10:46:38.980169"]]
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "doloremque illum aliquid sunt"], ["created_at", "2017-07-15 10:46:38.993207"], ["updated_at", "2017-07-15 10:46:38.993207"]]
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "qui explicabo molestiae dolorem"], ["created_at", "2017-07-15 10:46:39.009412"], ["updated_at", "2017-07-15 10:46:39.009412"]]
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "magnam ut rerum iure"], ["created_at", "2017-07-15 10:46:39.026479"], ["updated_at", "2017-07-15 10:46:39.026479"]]
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "id nihil consequatur molestias animi provident"], ["created_at", "2017-07-15 10:46:39.043573"], ["updated_at", "2017-07-15 10:46:39.043573"]]
+  [1m[35m (9.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "fuga nam accusamus voluptas reiciendis itaque"], ["created_at", "2017-07-15 10:46:39.060428"], ["updated_at", "2017-07-15 10:46:39.060428"]]
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "provident vel ut sit ratione est"], ["created_at", "2017-07-15 10:46:39.079354"], ["updated_at", "2017-07-15 10:46:39.079354"]]
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "explicabo et eos deleniti nostrum ab id repellendus"], ["created_at", "2017-07-15 10:46:39.092729"], ["updated_at", "2017-07-15 10:46:39.092729"]]
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "eos dolorem iste accusantium est eaque quam"], ["created_at", "2017-07-15 10:46:39.110288"], ["updated_at", "2017-07-15 10:46:39.110288"]]
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "enim quo cumque"], ["created_at", "2017-07-15 10:46:39.119765"], ["updated_at", "2017-07-15 10:46:39.119765"]]
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "non est facere"], ["created_at", "2017-07-15 10:46:39.129214"], ["updated_at", "2017-07-15 10:46:39.129214"]]
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "commodi ullam sint et excepturi error explicabo praesentium voluptas"], ["created_at", "2017-07-15 10:46:39.138728"], ["updated_at", "2017-07-15 10:46:39.138728"]]
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.1ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "eligendi iste nostrum consequuntur adipisci praesentium sit beatae perferendis"], ["created_at", "2017-07-15 10:46:39.158494"], ["updated_at", "2017-07-15 10:46:39.158494"]]
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "optio dolor molestias sit"], ["created_at", "2017-07-15 10:46:39.172424"], ["updated_at", "2017-07-15 10:46:39.172424"]]
+  [1m[35m (9.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "ut numquam possimus omnis eius suscipit laudantium iure"], ["created_at", "2017-07-15 10:46:39.192701"], ["updated_at", "2017-07-15 10:46:39.192701"]]
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "aut quo modi neque nostrum ducimus"], ["created_at", "2017-07-15 10:46:39.212513"], ["updated_at", "2017-07-15 10:46:39.212513"]]
+  [1m[35m (8.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "quibusdam cumque rem aut deserunt"], ["created_at", "2017-07-15 10:46:39.231030"], ["updated_at", "2017-07-15 10:46:39.231030"]]
+  [1m[35m (9.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "ut voluptatem illum ea doloribus itaque eos"], ["created_at", "2017-07-15 10:46:39.250767"], ["updated_at", "2017-07-15 10:46:39.250767"]]
+  [1m[35m (12.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "laborum non sunt aut ut assumenda perspiciatis voluptas"], ["created_at", "2017-07-15 10:46:39.269961"], ["updated_at", "2017-07-15 10:46:39.269961"]]
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "repellendus qui recusandae incidunt voluptates tenetur qui omnis exercitationem"], ["created_at", "2017-07-15 10:46:39.282352"], ["updated_at", "2017-07-15 10:46:39.282352"]]
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "soluta aliquam aperiam consequatur illo quis voluptas"], ["created_at", "2017-07-15 10:46:39.295792"], ["updated_at", "2017-07-15 10:46:39.295792"]]
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "qui enim et consequuntur quia animi quis voluptate quibusdam"], ["created_at", "2017-07-15 10:46:39.309169"], ["updated_at", "2017-07-15 10:46:39.309169"]]
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "ut quo aut ducimus alias"], ["created_at", "2017-07-15 10:46:39.324700"], ["updated_at", "2017-07-15 10:46:39.324700"]]
+  [1m[35m (9.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "sit asperiores ipsam eveniet odio non quia"], ["created_at", "2017-07-15 10:46:39.342212"], ["updated_at", "2017-07-15 10:46:39.342212"]]
+  [1m[35m (7.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "sit vel voluptatem et non libero"], ["created_at", "2017-07-15 10:46:39.358193"], ["updated_at", "2017-07-15 10:46:39.358193"]]
+  [1m[35m (8.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "qui et at rerum necessitatibus"], ["created_at", "2017-07-15 10:46:39.369519"], ["updated_at", "2017-07-15 10:46:39.369519"]]
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "sed ab est est"], ["created_at", "2017-07-15 10:46:39.379951"], ["updated_at", "2017-07-15 10:46:39.379951"]]
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "voluptatum itaque dolores nisi et quasi"], ["created_at", "2017-07-15 10:46:39.393529"], ["updated_at", "2017-07-15 10:46:39.393529"]]
+  [1m[35m (7.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "qui commodi dolor at maiores et quis id accusantium"], ["created_at", "2017-07-15 10:46:39.403006"], ["updated_at", "2017-07-15 10:46:39.403006"]]
+  [1m[35m (7.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "consequatur placeat omnis quisquam quia reprehenderit fugit veritatis facere"], ["created_at", "2017-07-15 10:46:39.416649"], ["updated_at", "2017-07-15 10:46:39.416649"]]
+  [1m[35m (7.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "voluptatem doloribus consectetur est ut ducimus"], ["created_at", "2017-07-15 10:46:39.428100"], ["updated_at", "2017-07-15 10:46:39.428100"]]
+  [1m[35m (7.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "beatae enim quia vel"], ["created_at", "2017-07-15 10:46:39.440264"], ["updated_at", "2017-07-15 10:46:39.440264"]]
+  [1m[35m (9.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "voluptas blanditiis repellendus animi ducimus error sapiente et suscipit"], ["created_at", "2017-07-15 10:46:39.465154"], ["updated_at", "2017-07-15 10:46:39.465154"]]
+  [1m[35m (10.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "et fugit quas eum in in aperiam quod"], ["created_at", "2017-07-15 10:46:39.485031"], ["updated_at", "2017-07-15 10:46:39.485031"]]
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "consequatur id enim sunt et et"], ["created_at", "2017-07-15 10:46:39.499663"], ["updated_at", "2017-07-15 10:46:39.499663"]]
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "repudiandae ea animi iusto"], ["created_at", "2017-07-15 10:46:39.519384"], ["updated_at", "2017-07-15 10:46:39.519384"]]
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "aliquid eos sed fuga est maxime repellendus"], ["created_at", "2017-07-15 10:46:39.539988"], ["updated_at", "2017-07-15 10:46:39.539988"]]
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "odio quis facere architecto reiciendis optio"], ["created_at", "2017-07-15 10:46:39.553749"], ["updated_at", "2017-07-15 10:46:39.553749"]]
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "fugiat quod pariatur odit minima"], ["created_at", "2017-07-15 10:46:39.577036"], ["updated_at", "2017-07-15 10:46:39.577036"]]
+  [1m[35m (8.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "voluptatem laborum magni"], ["created_at", "2017-07-15 10:46:39.590973"], ["updated_at", "2017-07-15 10:46:39.590973"]]
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "et iusto veniam et illum aut fuga"], ["created_at", "2017-07-15 10:46:39.606569"], ["updated_at", "2017-07-15 10:46:39.606569"]]
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.4ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "sint hic doloribus consequatur eos non id"], ["created_at", "2017-07-15 10:46:39.629843"], ["updated_at", "2017-07-15 10:46:39.629843"]]
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "consequuntur deleniti eos quia temporibus ab aliquid at"], ["created_at", "2017-07-15 10:46:39.644415"], ["updated_at", "2017-07-15 10:46:39.644415"]]
+  [1m[35m (10.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "enim unde ratione doloribus quas enim ut sit sapiente"], ["created_at", "2017-07-15 10:46:39.659985"], ["updated_at", "2017-07-15 10:46:39.659985"]]
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "dignissimos eum dolor ut enim et delectus in"], ["created_at", "2017-07-15 10:46:39.684705"], ["updated_at", "2017-07-15 10:46:39.684705"]]
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "doloremque officiis ad et non perferendis"], ["created_at", "2017-07-15 10:46:39.703127"], ["updated_at", "2017-07-15 10:46:39.703127"]]
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.1ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "necessitatibus quasi exercitationem odio"], ["created_at", "2017-07-15 10:46:39.722165"], ["updated_at", "2017-07-15 10:46:39.722165"]]
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "quam voluptatibus rerum veritatis"], ["created_at", "2017-07-15 10:46:39.738229"], ["updated_at", "2017-07-15 10:46:39.738229"]]
+  [1m[35m (8.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "pariatur consequatur quia magnam autem omnis non amet"], ["created_at", "2017-07-15 10:46:39.761850"], ["updated_at", "2017-07-15 10:46:39.761850"]]
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.9ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "labore in ex et explicabo corporis aut quas"], ["created_at", "2017-07-15 10:46:39.775605"], ["updated_at", "2017-07-15 10:46:39.775605"]]
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "tempora rem veritatis voluptas quo dolores vero"], ["created_at", "2017-07-15 10:46:39.800435"], ["updated_at", "2017-07-15 10:46:39.800435"]]
+  [1m[35m (8.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "laudantium voluptate suscipit sunt enim enim"], ["created_at", "2017-07-15 10:46:39.822986"], ["updated_at", "2017-07-15 10:46:39.822986"]]
+  [1m[35m (9.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "odit et voluptates doloribus alias odio et"], ["created_at", "2017-07-15 10:46:39.844293"], ["updated_at", "2017-07-15 10:46:39.844293"]]
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (4.9ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "optio ipsam molestias necessitatibus occaecati facilis veritatis dolores aut"], ["created_at", "2017-07-15 10:46:39.875881"], ["updated_at", "2017-07-15 10:46:39.875881"]]
+  [1m[35m (8.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.3ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "dolore veritatis porro provident adipisci blanditiis et sunt"], ["created_at", "2017-07-15 10:46:39.896168"], ["updated_at", "2017-07-15 10:46:39.896168"]]
+  [1m[35m (8.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "placeat quia et porro iste"], ["created_at", "2017-07-15 10:46:39.920289"], ["updated_at", "2017-07-15 10:46:39.920289"]]
+  [1m[35m (10.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "nostrum quis quasi placeat"], ["created_at", "2017-07-15 10:46:39.943519"], ["updated_at", "2017-07-15 10:46:39.943519"]]
+  [1m[35m (8.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (29.8ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "sapiente omnis fugit eos"], ["created_at", "2017-07-15 10:46:39.987270"], ["updated_at", "2017-07-15 10:46:39.987270"]]
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "sint soluta et vel magnam aut ut sed qui"], ["created_at", "2017-07-15 10:46:40.006250"], ["updated_at", "2017-07-15 10:46:40.006250"]]
+  [1m[35m (8.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "ad iusto omnis odit dolor voluptatibus"], ["created_at", "2017-07-15 10:46:40.020228"], ["updated_at", "2017-07-15 10:46:40.020228"]]
+  [1m[35m (8.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "aut amet sed"], ["created_at", "2017-07-15 10:46:40.041754"], ["updated_at", "2017-07-15 10:46:40.041754"]]
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "ratione ex tenetur perferendis"], ["created_at", "2017-07-15 10:46:40.059125"], ["updated_at", "2017-07-15 10:46:40.059125"]]
+  [1m[35m (12.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.7ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "beatae soluta recusandae"], ["created_at", "2017-07-15 10:46:40.077414"], ["updated_at", "2017-07-15 10:46:40.077414"]]
+  [1m[35m (7.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "qui qui voluptates illo iste minima"], ["created_at", "2017-07-15 10:46:40.092473"], ["updated_at", "2017-07-15 10:46:40.092473"]]
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "id minus libero illum nam ad officiis"], ["created_at", "2017-07-15 10:46:40.108348"], ["updated_at", "2017-07-15 10:46:40.108348"]]
+  [1m[35m (8.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "quaerat velit veniam amet cupiditate aut numquam ut sequi"], ["created_at", "2017-07-15 10:46:40.133743"], ["updated_at", "2017-07-15 10:46:40.133743"]]
+  [1m[35m (7.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "quas fugiat ut perspiciatis vero provident"], ["created_at", "2017-07-15 10:46:40.152742"], ["updated_at", "2017-07-15 10:46:40.152742"]]
+  [1m[35m (12.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "laboriosam dolor voluptates"], ["created_at", "2017-07-15 10:46:40.170654"], ["updated_at", "2017-07-15 10:46:40.170654"]]
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "temporibus sit alias delectus eligendi possimus magni"], ["created_at", "2017-07-15 10:46:40.185600"], ["updated_at", "2017-07-15 10:46:40.185600"]]
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "stocks" ("symbol", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["symbol", "at nam consequatur ea labore ea harum"], ["created_at", "2017-07-15 10:46:40.205010"], ["updated_at", "2017-07-15 10:46:40.205010"]]
+  [1m[35m (9.0ms)[0m  [1m[36mcommit transaction[0m

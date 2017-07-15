@@ -1,8 +1,10 @@
-require 'mechanize'
+# frozen_string_literal: true
+
+require "mechanize"
 
 def init
   mechanize = Mechanize.new
-  symbols = ["infy", "maruti"]
+  symbols = %w[infy maruti]
   news = {}
   for symbol in symbols do
     page_url = get_symbol_url(symbol.upcase)
@@ -10,29 +12,29 @@ def init
     news[symbol] = scrape_news(page)
   end
   puts news
-  return news
+  news
 end
 
 def scrape_news page
   news_items = []
-  articles = page.css('.g-section.news')
+  articles = page.css(".g-section.news")
 
   articles.each do |article|
-    next if article.css('.name a').text === ""
+    next if article.css(".name a").text === ""
     news_item = {}
-    news_item['title'] = article.css('.name a').text.strip
-    news_item['source'] = article.css('.src').first.text.strip
-    news_item['date'] = article.css('.date').text.strip
-    news_item['url'] = page.link_with(:text => news_item['title']).href
+    news_item["title"] = article.css(".name a").text.strip
+    news_item["source"] = article.css(".src").first.text.strip
+    news_item["date"] = article.css(".date").text.strip
+    news_item["url"] = page.link_with(text: news_item["title"]).href
     news_items.push(news_item)
   end
 
-  #puts page.link_with('Next').length
-  return news_items
+  # puts page.link_with('Next').length
+  news_items
 end
 
 def get_symbol_url symbol
-  return "https://www.google.com/finance/company_news?q=NSE%3A#{symbol}"
+  "https://www.google.com/finance/company_news?q=NSE%3A#{symbol}"
 end
 
-init()
+init
