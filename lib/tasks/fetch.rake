@@ -27,5 +27,6 @@ namespace :fetch do
       Stock.create(symbol: stock)
     end
     stocks_pre = stocks_today
+    puts "hello"
   end
 end
