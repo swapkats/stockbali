@@ -7,19 +7,20 @@ namespace :fetch do
  task news: :environment do
    def init
      mechanize = Mechanize.new
-     symbols = %w[infy maruti]
+     symbols = symbols = Stock.all.pluck(:symbol)
      news = {}
      for symbol in symbols do
        page_url = get_symbol_url(symbol.upcase)
        page = mechanize.get(page_url)
        news[symbol] = scrape_news(page)
+       puts symbol
+       puts news[symbol].length
      end
-     puts news
      news
     end
 
-    def scrape_news page
-     news_items = []
+    def scrape_news(page, news_items = nil)
+     news_items = news_items || []
      articles = page.css(".g-section.news")
 
      articles.each do |article|
@@ -32,7 +33,13 @@ namespace :fetch do
        news_items.push(news_item)
      end
 
-     # puts page.link_with('Next').length
+     if page.link_with(text: 'Next')
+       mechanize = Mechanize.new
+       page_url = page.link_with(text: 'Next').href
+       page = mechanize.get("https://www.google.com#{page_url}")
+       scrape_news(page, news_items)
+     end
+
      news_items
     end
 
