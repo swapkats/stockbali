@@ -14,21 +14,20 @@ namespace :fetch do
      end
    end
 
-   StockJson_resty = StockJson.new
-   stocks_pre = []
-   stocks_today = []
+   response = StockJson.new
+   symbols = JSON.parse(response.symbols)
 
-   puts StockJson_resty.symbols
+   stocks_pre = Stock.all.pluck(:symbol)
+   stocks_today = symbols.keys
 
-  #  StockJson_resty.symbols.each do |symbol|
-  #    stocks_today << symbol["title"]
-  #  end
-  #  stocks_diff = stocks_today - stocks_pre | stocks_pre - stocks_today
-   #
-  #  stocks_diff.each do |stock|
-  #    Stock.create(symbol: stock)
-  #  end
-  #  stocks_pre = stocks_today
-   puts "hello"
+   stocks_diff = stocks_today - stocks_pre | stocks_pre - stocks_today
+
+   for symbol in stocks_diff do
+     next if symbol === "SYMBOL"
+     Stock.create({
+       symbol: symbol,
+       company: symbols[symbol]
+     })
+   end
  end
 end
