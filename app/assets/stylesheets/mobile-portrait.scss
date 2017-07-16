@@ -1,0 +1,276 @@
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 350px)
+  and (max-device-width: 768px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  .bannerBtns {
+    display: none;
+  }
+
+  .landing-page-logo {
+    display: none;
+  }
+
+  .chat-container {
+    .aboutWrapper {
+      display: none;
+    }
+  }
+}
+
+@media screen
+  and (max-aspect-ratio: 13/9)
+  and (min-device-width: 350px)
+  and (max-device-width: 768px)
+  and (orientation: portrait) {
+
+  .landing-page-nav {
+    width: 100%;
+    bottom: 0px;
+    height: inherit;
+    position: fixed;
+    background-color: black;
+
+    .session-control-container {
+      width: 100%;
+
+      .session-control-btn {
+        color: black;
+      }
+
+      .session-control-guest-btn {
+        height: 35px;
+        margin-top: 5px;
+        color: black;
+      }
+    }
+  }
+
+  .session-control {
+    display: flex;
+    zoom: 3;
+  }
+
+  .banner-container {
+    .banner-logo {
+      width: 50%;
+    }
+
+    .banner-subtitle {
+      h2 {
+        font-size: 70px;
+      }
+    }
+
+    .banner-title {
+      h1 {
+        font-size: 110px;
+        line-height: 140px;
+      }
+    }
+  }
+
+  .app-container {
+    .modal {
+      top: 0px;
+      background-color: rgba(0, 0, 0, 0.0);
+    }
+  }
+
+  .session-form-container {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+
+    .session-form {
+      width: 100%;
+      height: 100%;
+      padding: 0px 0px 50px 0px;
+
+      input[type=submit] {
+        margin-top: 20px;
+        zoom: 2.5;
+      }
+
+      .avatar-upload-container {
+        display: none;
+      }
+
+      .session-form-title {
+        font-size: 100px;
+      }
+
+      .session-form-direction {
+        font-size: 35px;
+      }
+
+      .session-form-inputs {
+        margin-top: 40px;
+        width: 90%;
+
+        .session-form-input {
+          width: 90%;
+          font-size: 40px;
+          padding: 45px;
+        }
+      }
+    }
+  }
+
+  .user-section {
+    display: none;
+  }
+
+  .messages-container {
+    left: 0px;
+    zoom: 2.5;
+  }
+
+  .message-input-container {
+    left: 0px;
+    zoom: 2.5;
+  }
+
+  .header-container {
+    zoom: 2.5;
+  }
+
+  .channel-section {
+    display: none !important;
+  }
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 350px)
+  and (max-device-width: 768px)
+  and (min-aspect-ratio: 13/9)
+  and (orientation: landscape) {
+
+  .app-container {
+    .modal {
+      top: 0px;
+      background-color: rgba(0, 0, 0, 0.0);
+    }
+  }
+
+  .banner-container {
+    .banner-logo {
+      width: 15%;
+    }
+
+    .banner-subtitle {
+      h2 {
+        font-size: 35px;
+      }
+    }
+
+    .banner-title {
+      h1 {
+        font-size: 50px;
+      }
+    }
+  }
+
+  .landing-page-nav {
+    width: 100%;
+    bottom: 0px;
+    height: inherit;
+    position: fixed;
+    background-color: black;
+
+    .session-control-container {
+      width: 100%;
+      zoom: 1.5;
+      padding-bottom: 5px;
+
+      .session-control-btn {
+        color: black;
+      }
+
+      .session-control-guest-btn {
+        height: 35px;
+        margin-top: 5px;
+        color: black;
+      }
+    }
+  }
+
+  .session-form-container {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+
+    .session-form {
+      width: 100%;
+      height: 100%;
+      padding: 0px 0px 50px 0px;
+
+      input[type=submit] {
+        margin-top: 10px;
+        font-size: 25px;
+      }
+
+      .avatar-upload-container {
+        display: none;
+      }
+
+      .session-form-title {
+        font-size: 45px;
+        padding-bottom: 10px;
+      }
+
+      .session-form-direction {
+        font-size: 20px;
+      }
+
+      .session-form-inputs {
+        margin-top: 10px;
+        width: 90%;
+
+        .session-form-input {
+          width: 95%;
+          font-size: 20px;
+          padding: 20px;
+        }
+      }
+    }
+  }
+
+  .messages-container {
+    left: 220px;
+    zoom: 1.3;
+  }
+
+  .message-input-container {
+    left: 240px;
+    zoom: 1.2;
+  }
+
+  .header-container {
+    zoom: 1.3;
+  }
+
+  .user-section {
+    zoom: 1.3;
+    overflow-y: scroll;
+    height: 100%;
+  }
+
+  .channel-section {
+    zoom: 1.3;
+  }
+
+  .channels-view-container,
+  .dm-container {
+    zoom: 1.3;
+  }
+
+  .ReactModal__Content {
+    top: 25px !important;
+    bottom: 25px !important;
+  }
+}
