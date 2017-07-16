@@ -36,4 +36,7 @@ group :development do
   gem 'annotate'
 end
 
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem "httparty", "~> 0.15.5"
+gem "rubocop", "~> 0.49.1"
+gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
+gem "whenever", "~> 0.9.7", require: false
