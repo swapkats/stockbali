@@ -99,7 +99,7 @@ class UserControl extends React.Component {
         <button onClick={ this.props.openUserMenuModal }>
 
           <div className='user-control-title'>
-            <h2>SlackOff</h2>
+            <h2>StockBali</h2>
           </div>
 
           <div className='user-control-name'>

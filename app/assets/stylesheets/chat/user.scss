@@ -185,6 +185,26 @@ button {
 
   .user-channels-container {
     padding: 15px 0px;
+    height: 100%;
+
+    .user-channels-wrapper {
+      flex: 1;
+    }
+
+    .user-channels-search-input {
+      margin: 0 15px;
+      background: slategray;
+      border: 0;
+      outline: 0;
+      padding: 7px 15px;
+      border-radius: 2px;
+      width: 142px;
+      color: #fff;
+
+      &::placeholder {
+        color: #eee;
+      }
+    }
 
     .user-channels-count {
       margin-left: 5px;

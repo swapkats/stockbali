@@ -6,7 +6,6 @@ import { setChannel } from '../../../actions/current_channel_actions';
 
 import UserControl from './user-control';
 import UserChannels from './user-channels';
-import UserDMs from './user-dms';
 
 class UserSection extends React.Component {
   constructor(props) {
@@ -19,7 +18,6 @@ class UserSection extends React.Component {
 
         <UserControl />
         <UserChannels />
-        <UserDMs />
 
       </section>
     );

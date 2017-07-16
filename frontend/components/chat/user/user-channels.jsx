@@ -3,12 +3,11 @@ import { connect } from 'react-redux';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 import { setChannel } from '../../../actions/current_channel_actions';
-import { fetchChannel } from '../../../actions/channel_actions';
+import { fetchChannel, fetchPublicChannels } from '../../../actions/channel_actions';
 import { getUser } from '../../../actions/session_actions';
 import { openChannelsViewModal } from '../../../actions/modal_actions';
 
 import UserChannelItem from './user-channel-item';
-import ChannelsView from '../channel/channels-view.jsx';
 
 class UserChannels extends React.Component {
   constructor(props) {
@@ -16,7 +15,10 @@ class UserChannels extends React.Component {
 
     this.state = {
       userChannels: this.props.userChannels,
-      currentChannel: this.props.currentChannel
+      currentChannel: this.props.currentChannel,
+      searchInput: '',
+      allChannels: null,
+      userChannels: null,
     };
 
     this.pusher = new Pusher('d46870f8b7c4c1636fca', {
@@ -27,6 +29,11 @@ class UserChannels extends React.Component {
 
     this.buildChannelItems = this.buildChannelItems.bind(this);
     this.changeChannel = this.changeChannel.bind(this);
+    this.handleInput = this.handleInput.bind(this);
+  }
+
+  componentDidMount() {
+    this.props.fetchPublicChannels();
   }
 
   componentWillUnmount() {
@@ -36,21 +43,22 @@ class UserChannels extends React.Component {
   changeChannel(channel) {
     return (e) => {
       this.props.fetchChannel(this.props.user.id, channel.id)
-                .then((newChannel) => {
-                  const channel = {
-                    id: newChannel.channel.id,
-                    name: newChannel.channel.name,
-                    description: newChannel.channel.description,
-                    private: newChannel.channel.private
-                  };
+        .then((newChannel) => {
+          const channel = {
+            id: newChannel.channel.id,
+            name: newChannel.channel.name,
+            description: newChannel.channel.description,
+            private: newChannel.channel.private
+          };
 
-                  this.props.setChannel(channel);
-                  this.setState({ currentChannel: channel });
-                });
+          this.props.setChannel(channel);
+          this.setState({ currentChannel: channel });
+        });
     };
   }
 
   buildChannelItems(channels) {
+    console.log("channels", channels)
     return channels.map((channel, i) => (
       <button key={i} onClick={ this.changeChannel(channel).bind(this) }>
         <UserChannelItem key={ i }
@@ -61,32 +69,55 @@ class UserChannels extends React.Component {
     ));
   }
 
+  handleInput(e) {
+    const searchInput = e.target.value;
+    let userChannels = null;
+    let allChannels = null;
+    if (searchInput) {
+      userChannels = this.props.userChannels.filter((channel) =>
+        channel.name.includes(searchInput)
+      );
+      allChannels = this.props.allChannels.filter((channel) =>
+        channel.name.includes(searchInput)
+      );
+    }
+    this.setState({
+      searchInput,
+      allChannels,
+      userChannels,
+    });
+  }
+
   render() {
     const channelCount = this.props.user.subscriptions.length;
-
+    console.log("this.props.allChannels", this.props.allChannels)
     return (
       <section className='user-channels-container'>
-        <ChannelsView />
+        <input className='user-channels-search-input'
+               placeholder='Search channels'
+               value={this.state.searchInput}
+               onChange={ this.handleInput } type='text' />
+        <div className='user-channels-wrapper'>
+          <button onClick={ this.props.openChannelsViewModal }>
+            <h4>Watchlist
+              <span className='user-channels-count'>({ channelCount })</span>
+            </h4>
+          </button>
 
-        <button onClick={ this.props.openChannelsViewModal }>
-          <h4>Watchlist
-            <span className='user-channels-count'>({ channelCount })</span>
-          </h4>
-        </button>
+          <ul className='user-channels-list'>
+            { this.buildChannelItems(this.state.userChannels || this.props.userChannels) }
+          </ul>
 
-        <ul className='user-channels-list'>
-          { this.buildChannelItems(this.props.userChannels) }
-        </ul>
+          <button onClick={ this.props.openChannelsViewModal }>
+            <h4>All Stocks
+              <span className='user-channels-count'>({ this.state.allChannels && this.state.allChannels.length || this.props.allChannels.length })</span>
+            </h4>
+          </button>
 
-        <button onClick={ this.props.openChannelsViewModal }>
-          <h4>All Stocks
-            <span className='user-channels-count'>({ this.props.allChannels.count })</span>
-          </h4>
-        </button>
-
-        <ul className='user-channels-list'>
-          { this.buildChannelItems(this.props.allChannels) }
-        </ul>
+          <ul className='user-channels-list'>
+            { this.buildChannelItems(this.state.allChannels || this.props.allChannels) }
+          </ul>
+        </div>
       </section>
     );
   }
@@ -105,7 +136,8 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
   openChannelsViewModal: () => dispatch(openChannelsViewModal()),
   fetchChannel: (userId, channelId) => dispatch(fetchChannel(userId, channelId)),
   setChannel: (channel) => dispatch(setChannel(channel)),
-  getUser: (id) => dispatch(getUser(id))
+  getUser: (id) => dispatch(getUser(id)),
+  fetchPublicChannels: () => dispatch(fetchPublicChannels())
 });
 
 export default connect(
