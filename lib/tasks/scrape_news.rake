@@ -3,7 +3,7 @@
 require "mechanize"
 
 namespace :fetch do
- desc "Fethes symbol data from api"
+ desc "Scrapes company news from google finance"
  task news: :environment do
    def init
      mechanize = Mechanize.new
