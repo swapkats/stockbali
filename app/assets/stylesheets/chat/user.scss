@@ -92,6 +92,9 @@ button {
 }
 
 .user-section {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
   min-width: 220px;
   width: 220px;
 
@@ -106,7 +109,7 @@ button {
     font-weight: 400;
     letter-spacing: 0px;
     color: #d5d5d5;
-    margin-bottom: 15px;
+    margin: 15px 0;
     padding-left: 15px;
     transition: all 0.3s ease 0s;
 
@@ -444,70 +447,6 @@ button {
         transition: all 0.3s ease 0s;
         border: 1px solid $blue;
         outline: none;
-      }
-    }
-  }
-}
-
-.aboutWrapper {
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  border-top: 1px solid gray;
-  background-color: #4D394B;
-  position: fixed;
-  bottom: 0px;
-  width: 220px;
-  color: white;
-  padding: 15px 15px 0px 15px;
-
-  font-weight: 300;
-
-  .aboutHeader {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-
-    img {
-      width: 25px;
-      height: 25px;
-    }
-
-    h4 {
-      color: white;
-      margin: 0px;
-      padding-left: 10px;
-      font-size: 17px;
-      font-weight: bold;
-    }
-  }
-
-  .aboutDescription {
-    margin-bottom: 10px;
-    font-size: 14px;
-  }
-
-  .aboutLinks {
-    margin-bottom: 10px;
-    border-radius: 5px;
-    font-size: 14px;
-
-    a {
-      display: block;
-      text-decoration: none;
-      padding: 5px 0px;
-      color: #cdcdcd;
-      transition: all 0.3s ease 0s;
-
-      i {
-        margin-right: 10px;
-        width: 15px;
-      }
-
-      &:hover {
-        color: white;
-        border-radius: 5px;
-        transition: all 0.3s ease 0s;
       }
     }
   }

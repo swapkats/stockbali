@@ -50,8 +50,8 @@ class UserChannels extends React.Component {
     };
   }
 
-  buildChannelItems() {
-    return this.props.userChannels.map((channel, i) => (
+  buildChannelItems(channels) {
+    return channels.map((channel, i) => (
       <button key={i} onClick={ this.changeChannel(channel).bind(this) }>
         <UserChannelItem key={ i }
           channel={ channel }
@@ -69,13 +69,23 @@ class UserChannels extends React.Component {
         <ChannelsView />
 
         <button onClick={ this.props.openChannelsViewModal }>
-          <h4>CHANNELS
+          <h4>Watchlist
             <span className='user-channels-count'>({ channelCount })</span>
           </h4>
         </button>
 
         <ul className='user-channels-list'>
-          { this.buildChannelItems() }
+          { this.buildChannelItems(this.props.userChannels) }
+        </ul>
+
+        <button onClick={ this.props.openChannelsViewModal }>
+          <h4>All Stocks
+            <span className='user-channels-count'>({ this.props.allChannels.count })</span>
+          </h4>
+        </button>
+
+        <ul className='user-channels-list'>
+          { this.buildChannelItems(this.props.allChannels) }
         </ul>
       </section>
     );
@@ -85,6 +95,7 @@ class UserChannels extends React.Component {
 const mapStateToProps = (state, ownProps) => {
   return {
     user: state.session.currentUser,
+    allChannels: Object.keys(state.allChannels).map((i) => state.allChannels[i]),
     userChannels: state.session.currentUser.subscriptions,
     currentChannel: state.channel
   };
