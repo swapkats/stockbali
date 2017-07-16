@@ -4,13 +4,13 @@ require "httparty"
 
 namespace :fetch do
  desc "Fethes symbol data from api"
- task fetch_symbols: :environment do
+ task symbols: :environment do
    class StockJson
      include HTTParty
-     base_uri "jsonplaceholder.typicode.com/"
+     base_uri "stockbali.herokuapp.com/"
 
      def symbols
-       self.class.get("/posts")
+       self.class.get("/api/v1.0/symbols")
      end
    end
 
@@ -18,15 +18,17 @@ namespace :fetch do
    stocks_pre = []
    stocks_today = []
 
-   StockJson_resty.symbols.each do |symbol|
-     stocks_today << symbol["title"]
-   end
-   stocks_diff = stocks_today - stocks_pre | stocks_pre - stocks_today
+   puts StockJson_resty.symbols
 
-   stocks_diff.each do |stock|
-     Stock.create(symbol: stock)
-   end
-   stocks_pre = stocks_today
+  #  StockJson_resty.symbols.each do |symbol|
+  #    stocks_today << symbol["title"]
+  #  end
+  #  stocks_diff = stocks_today - stocks_pre | stocks_pre - stocks_today
+   #
+  #  stocks_diff.each do |stock|
+  #    Stock.create(symbol: stock)
+  #  end
+  #  stocks_pre = stocks_today
    puts "hello"
  end
 end
