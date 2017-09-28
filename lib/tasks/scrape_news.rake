@@ -8,6 +8,7 @@ namespace :fetch do
    def init
      mechanize = Mechanize.new
      symbols = symbols = Stock.all.pluck(:symbol)
+     symbols = [symbols[0]]
      news = {}
      for symbol in symbols do
        page_url = get_symbol_url(symbol.upcase)

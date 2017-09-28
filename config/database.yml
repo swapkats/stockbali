@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: slackoff_production
-  username: slackoff
-  password: <%= ENV['SLACKOFF_DATABASE_PASSWORD'] %>
+  # username: slackoff
+  # password: <%= ENV['SLACKOFF_DATABASE_PASSWORD'] %>

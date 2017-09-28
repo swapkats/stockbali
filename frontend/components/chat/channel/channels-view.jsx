@@ -2,16 +2,12 @@ import React from 'react';
 import Modal from 'react-modal';
 import moment from 'moment';
 import { connect } from 'react-redux';
-
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
-import { fetchPublicChannels,
-         createPublicSubscription } from '../../../actions/channel_actions';
-
+import { fetchPublicChannels, createPublicSubscription } from '../../../actions/channel_actions';
 import { setChannel } from '../../../actions/current_channel_actions';
 import { updateSubscription } from '../../../actions/session_actions';
-import { openChannelsViewModal,
-         closeChannelsViewModal } from '../../../actions/modal_actions';
+import { openChannelsViewModal, closeChannelsViewModal } from '../../../actions/modal_actions';
 
 class ChannelsView extends React.Component {
   constructor(props) {
@@ -110,28 +106,6 @@ class ChannelsView extends React.Component {
   }
 
   render() {
-    const style = {
-      overlay : {
-        backgroundColor : 'rgba(255, 255, 255, 0.9)',
-        zIndex          : 10
-      },
-      content : {
-        position        : 'fixed',
-        boxSizing       : 'border-box',
-        boxShadow       : '1px 1px 5px 0px rgba(50, 50, 50, 0.3)',
-        top             : '100px',
-        bottom          : '100px',
-        left            : '100px',
-        right           : '100px',
-        border          : '1px solid #ccc',
-        borderRadius    : '5px',
-        paddingTop      : '50px',
-        paddingBottom   : '50px',
-        transition      : 'all 0.3s ease 0s',
-        zIndex          : 11
-      }
-    };
-
     return (
       <Modal isOpen={ this.props.channelsView }
              onRequestClose={ this.props.closeChannelsViewModal }
@@ -159,6 +133,28 @@ class ChannelsView extends React.Component {
     );
   }
 }
+
+const style = {
+  overlay : {
+    backgroundColor : 'rgba(255, 255, 255, 0.9)',
+    zIndex          : 10
+  },
+  content : {
+    position        : 'fixed',
+    boxSizing       : 'border-box',
+    boxShadow       : '1px 1px 5px 0px rgba(50, 50, 50, 0.3)',
+    top             : '100px',
+    bottom          : '100px',
+    left            : '100px',
+    right           : '100px',
+    border          : '1px solid #ccc',
+    borderRadius    : '5px',
+    paddingTop      : '50px',
+    paddingBottom   : '50px',
+    transition      : 'all 0.3s ease 0s',
+    zIndex          : 11
+  }
+};
 
 const mapStateToProps = (state, ownProps) => ({
   allChannels: Object.keys(state.allChannels).map((i) => state.allChannels[i]),

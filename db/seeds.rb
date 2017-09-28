@@ -199,161 +199,161 @@ dm2_sub3 = Subscription.create(user_id: user3.id,
                                channel_id: dm2.id)
 
 user = User.find_by(username: 'jon.snow')
-user.avatar = File.open('app/assets/images/got/jon.snow.jpg')
+#user.avatar = File.open('app/assets/images/got/jon.snow.jpg')
 user.save
 
 user = User.find_by(username: 'ned.stark')
-user.avatar = File.open('app/assets/images/got/ned.stark.jpg')
+#user.avatar = File.open('app/assets/images/got/ned.stark.jpg')
 user.save
 
 user = User.find_by(username: 'tyrion.lannister')
-user.avatar = File.open('app/assets/images/got/tyrion.lannister.jpg')
+#user.avatar = File.open('app/assets/images/got/tyrion.lannister.jpg')
 user.save
 
 user = User.find_by(username: 'daenerys.targaryen')
-user.avatar = File.open('app/assets/images/got/daenerys.targaryen.jpg')
+#user.avatar = File.open('app/assets/images/got/daenerys.targaryen.jpg')
 user.save
 
 user = User.find_by(username: 'jaime.lannister')
-user.avatar = File.open('app/assets/images/got/jaime.lannister.jpg')
+#user.avatar = File.open('app/assets/images/got/jaime.lannister.jpg')
 user.save
 
 user = User.find_by(username: 'petyr.baelish')
-user.avatar = File.open('app/assets/images/got/petyr.baelish.jpg')
+#user.avatar = File.open('app/assets/images/got/petyr.baelish.jpg')
 user.save
 
 user = User.find_by(username: 'arya.stark')
-user.avatar = File.open('app/assets/images/got/arya.stark.jpg')
+#user.avatar = File.open('app/assets/images/got/arya.stark.jpg')
 user.save
 
 user = User.find_by(username: 'theon.greyjoy')
-user.avatar = File.open('app/assets/images/got/theon.greyjoy.jpg')
+#user.avatar = File.open('app/assets/images/got/theon.greyjoy.jpg')
 user.save
 
 user = User.find_by(username: 'samwell.tarly')
-user.avatar = File.open('app/assets/images/got/samwell.tarly.jpg')
+#user.avatar = File.open('app/assets/images/got/samwell.tarly.jpg')
 user.save
 
 user = User.find_by(username: 'sansa.stark')
-user.avatar = File.open('app/assets/images/got/sansa.stark.jpg')
+#user.avatar = File.open('app/assets/images/got/sansa.stark.jpg')
 user.save
 
 user = User.find_by(username: 'robb.stark')
-user.avatar = File.open('app/assets/images/got/robb.stark.jpg')
+#user.avatar = File.open('app/assets/images/got/robb.stark.jpg')
 user.save
 
 user = User.find_by(username: 'cersei.lannister')
-user.avatar = File.open('app/assets/images/got/cersei.lannister.jpg')
+#user.avatar = File.open('app/assets/images/got/cersei.lannister.jpg')
 user.save
 
 user = User.find_by(username: 'joffrey.baratheon')
-user.avatar = File.open('app/assets/images/got/joffrey.baratheon.jpg')
+#user.avatar = File.open('app/assets/images/got/joffrey.baratheon.jpg')
 user.save
 
 user = User.find_by(username: 'ramsay.bolton')
-user.avatar = File.open('app/assets/images/got/ramsay.bolton.jpg')
+#user.avatar = File.open('app/assets/images/got/ramsay.bolton.jpg')
 user.save
 
 user = User.find_by(username: 'brienne.of.tarth')
-user.avatar = File.open('app/assets/images/got/brienne.of.tarth.jpg')
+#user.avatar = File.open('app/assets/images/got/brienne.of.tarth.jpg')
 user.save
 
 user = User.find_by(username: 'ygritte')
-user.avatar = File.open('app/assets/images/got/ygritte.jpg')
+#user.avatar = File.open('app/assets/images/got/ygritte.jpg')
 user.save
 
 user = User.find_by(username: 'lord.varys')
-user.avatar = File.open('app/assets/images/got/lord.varys.jpg')
+#user.avatar = File.open('app/assets/images/got/lord.varys.jpg')
 user.save
 
 user = User.find_by(username: 'stannis.baratheon')
-user.avatar = File.open('app/assets/images/got/stannis.baratheon.jpg')
+#user.avatar = File.open('app/assets/images/got/stannis.baratheon.jpg')
 user.save
 
 user = User.find_by(username: 'oberyn.martell')
-user.avatar = File.open('app/assets/images/got/oberyn.martell.jpg')
+#user.avatar = File.open('app/assets/images/got/oberyn.martell.jpg')
 user.save
 
 user = User.find_by(username: 'jorah.mormont')
-user.avatar = File.open('app/assets/images/got/jorah.mormont.jpg')
+#user.avatar = File.open('app/assets/images/got/jorah.mormont.jpg')
 user.save
 
 user = User.find_by(username: 'khal.drogo')
-user.avatar = File.open('app/assets/images/got/khal.drogo.jpg')
+#user.avatar = File.open('app/assets/images/got/khal.drogo.jpg')
 user.save
 
 user = User.find_by(username: 'maester.aemon')
-user.avatar = File.open('app/assets/images/got/maester.aemon.jpg')
+#user.avatar = File.open('app/assets/images/got/maester.aemon.jpg')
 user.save
 
 user = User.find_by(username: 'podrick.payne')
-user.avatar = File.open('app/assets/images/got/podrick.payne.jpg')
+#user.avatar = File.open('app/assets/images/got/podrick.payne.jpg')
 user.save
 
 user = User.find_by(username: 'jojen.reed')
-user.avatar = File.open('app/assets/images/got/jojen.reed.jpg')
+#user.avatar = File.open('app/assets/images/got/jojen.reed.jpg')
 user.save
 
 user = User.find_by(username: 'davos.seaworth')
-user.avatar = File.open('app/assets/images/got/davos.seaworth.jpg')
+#user.avatar = File.open('app/assets/images/got/davos.seaworth.jpg')
 user.save
 
 user = User.find_by(username: 'catelyn.stark')
-user.avatar = File.open('app/assets/images/got/catelyn.stark.jpg')
+#user.avatar = File.open('app/assets/images/got/catelyn.stark.jpg')
 user.save
 
 user = User.find_by(username: 'melisandre')
-user.avatar = File.open('app/assets/images/got/melisandre.jpg')
+#user.avatar = File.open('app/assets/images/got/melisandre.jpg')
 user.save
 
 user = User.find_by(username: 'gilly')
-user.avatar = File.open('app/assets/images/got/gilly.jpg')
+#user.avatar = File.open('app/assets/images/got/gilly.jpg')
 user.save
 
 user = User.find_by(username: 'daario.naharis')
-user.avatar = File.open('app/assets/images/got/daario.naharis.jpg')
+#user.avatar = File.open('app/assets/images/got/daario.naharis.jpg')
 user.save
 
 user = User.find_by(username: 'roose.bolton')
-user.avatar = File.open('app/assets/images/got/roose.bolton.jpg')
+#user.avatar = File.open('app/assets/images/got/roose.bolton.jpg')
 user.save
 
 user = User.find_by(username: 'sandor.clegane')
-user.avatar = File.open('app/assets/images/got/sandor.clegane.jpg')
+#user.avatar = File.open('app/assets/images/got/sandor.clegane.jpg')
 user.save
 
 user = User.find_by(username: 'guest')
-user.avatar = File.open('app/assets/images/avatars/earth.png')
+#user.avatar = File.open('app/assets/images/avatars/earth.png')
 user.save
 
 user = User.find_by(username: 'guest2')
-user.avatar = File.open('app/assets/images/avatars/blackhole.png')
+#user.avatar = File.open('app/assets/images/avatars/blackhole.png')
 user.save
 
 user = User.find_by(username: 'atom.')
-user.avatar = File.open('app/assets/images/avatars/saturn.png')
+#user.avatar = File.open('app/assets/images/avatars/saturn.png')
 user.save
 
 user = User.find_by(username: 'avital')
-user.avatar = File.open('app/assets/images/avatars/sun.png')
+#user.avatar = File.open('app/assets/images/avatars/sun.png')
 user.save
 
 user = User.find_by(username: 'dcolson')
-user.avatar = File.open('app/assets/images/avatars/dcolson.jpg')
+#user.avatar = File.open('app/assets/images/avatars/dcolson.jpg')
 user.save
 
 user = User.find_by(username: 'fred')
-user.avatar = File.open('app/assets/images/avatars/fred.jpg')
+#user.avatar = File.open('app/assets/images/avatars/fred.jpg')
 user.save
 
 user = User.find_by(username: 'mikeboan')
-user.avatar = File.open('app/assets/images/avatars/mikeboan.jpg')
+#user.avatar = File.open('app/assets/images/avatars/mikeboan.jpg')
 user.save
 
 user = User.find_by(username: 'pklong')
-user.avatar = File.open('app/assets/images/avatars/pklong.jpg')
+#user.avatar = File.open('app/assets/images/avatars/pklong.jpg')
 user.save
 
 user = User.find_by(username: 'kevin.kik.lee')
-user.avatar = File.open('app/assets/images/avatars/kevin.kik.lee.jpg')
+#user.avatar = File.open('app/assets/images/avatars/kevin.kik.lee.jpg')
 user.save
