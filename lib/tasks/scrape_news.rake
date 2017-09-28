@@ -33,12 +33,12 @@ namespace :fetch do
        news_items.push(news_item)
      end
 
-     if page.link_with(text: 'Next')
-       mechanize = Mechanize.new
-       page_url = page.link_with(text: 'Next').href
-       page = mechanize.get("https://www.google.com#{page_url}")
-       scrape_news(page, news_items)
-     end
+    #  if page.link_with(text: 'Next')
+    #    mechanize = Mechanize.new
+    #    page_url = page.link_with(text: 'Next').href
+    #    page = mechanize.get("https://www.google.com#{page_url}")
+    #    scrape_news(page, news_items)
+    #  end
 
      return news_items
     end
