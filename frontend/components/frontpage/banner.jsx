@@ -9,7 +9,6 @@ class Banner extends React.Component {
     super(props);
 
     this.guestLogin = this.guestLogin.bind(this);
-    this.guest2Login = this.guest2Login.bind(this);
     this.buildButtons = this.buildButtons.bind(this);
   }
 
@@ -17,16 +16,6 @@ class Banner extends React.Component {
     const user = {
       "username": "guest",
       "password": "guestlogin",
-    };
-
-    this.props.login(user).then(() => this.props.router.push('/chat'));
-  }
-
-  guest2Login() {
-    const user = {
-      username: 'guest2',
-      password: 'guest2login',
-      email: 'guest2@guest2.com'
     };
 
     this.props.login(user).then(() => this.props.router.push('/chat'));
@@ -51,11 +40,6 @@ class Banner extends React.Component {
           <button className='guest-btn shadow'
                   onClick={ this.guestLogin }>
             Guest
-          </button>
-
-          <button className='guest-btn shadow'
-                  onClick={ this.guest2Login }>
-            Guest2
           </button>
         </div>
       );
