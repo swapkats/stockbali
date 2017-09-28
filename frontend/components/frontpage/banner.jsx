@@ -45,7 +45,7 @@ class Banner extends React.Component {
       return (
         <div className='bannerBtns'>
           <Link className='banner-btn shadow' to='/signup'>
-            Join SlackOff
+            Join StockBaat
           </Link><br /><br /><br />
 
           <button className='guest-btn shadow'

@@ -1,7 +1,7 @@
 {
-  "name": "slackoff",
+  "name": "StockBaat",
   "version": "0.0.7",
-  "description": "SlackOff is a clone of a popular chat client, Slack.  SlackOff utilizes Rails, React and Pusher.",
+  "description": "StockBaat is place where you can discuss indian stocks",
   "main": "webpack.config.js",
   "directories": {
     "doc": "docs",
@@ -45,12 +45,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iserbit/slackoff.git"
+    "url": "git+https://github.com/swapkats/stockbali.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/iserbit/slackoff/issues"
+    "url": "https://github.com/swapkats/stockbali/issues"
   },
-  "homepage": "https://github.com/iserbit/slackoff#readme"
+  "homepage": "https://github.com/swapkats/stockbali#readme"
 }

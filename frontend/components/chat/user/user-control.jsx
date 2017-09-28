@@ -82,7 +82,7 @@ class UserControl extends React.Component {
             <section className='user-control-menu-logout-container'>
               <button className='user-menu-edit-logout-btn'
                       onClick={ this.logout }>
-                Logout from SlackOff
+                Logout from StockBaat
               </button>
             </section>
           </section>
@@ -99,7 +99,7 @@ class UserControl extends React.Component {
         <button onClick={ this.props.openUserMenuModal }>
 
           <div className='user-control-title'>
-            <h2>StockBali</h2>
+            <h2>StockBaat</h2>
           </div>
 
           <div className='user-control-name'>

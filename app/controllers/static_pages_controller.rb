@@ -8,10 +8,10 @@ class StaticPagesController < ApplicationController
     og_image_url = root_url + ActionController::Base.helpers.asset_url("slackoff-og.jpg")
 
     set_meta_tags og: {
-      title:    'SlackOff | Rails/React Chat Application',
-      url:      'http://slackoff.today',
+      title:    'StockBaat | Discuss stocks',
+      url:      'http://stockbaat.com',
       image:    og_image_url,
-      description: 'SlackOff is a full-stack web application inspired by Slack. It utilizes Ruby on Rails, React.js with Redux pattern, and Pusher API for websocket protocol.'
+      description: 'StockBaat is a chat application designed to keep investors discuss and stay updated with indian stocks'
     }
   end
 end

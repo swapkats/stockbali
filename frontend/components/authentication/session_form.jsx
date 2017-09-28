@@ -146,14 +146,14 @@ class SessionForm extends React.Component {
   }
 
   render() {
-    let titleText = 'Login to SlackOff';
+    let titleText = 'Login to StockBaat';
     let directionText = <span>Enter your <b>username</b> and <b>password</b></span>;
     let buttonText = 'Login';
     let email = '';
     let avatarUpload = '';
 
     if(this.props.formType === 'signup') {
-      titleText = 'Join SlackOff';
+      titleText = 'Join StockBaat';
       directionText = <span>Enter your <b>username</b>, <b>e-mail</b> and <b>password</b></span>;
       buttonText = 'Join';
       email = this.emailField();

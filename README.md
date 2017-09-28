@@ -1,4 +1,4 @@
-# Stockbali
+# Stockbaat
 
 Slack like application for stock news.
 

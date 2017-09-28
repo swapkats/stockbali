@@ -179,26 +179,6 @@ class ChannelSection extends React.Component {
           <div className='channel-action-warning'>
             { this.buildAlert() }
           </div>
-          <div className='channel-action-buttons'>
-            <button className='channel-action-create-btn'
-                    onClick={ this.createChannel }>
-              Create Channel
-            </button>
-            <button className='channel-action-leave-btn'
-                    onClick={ this.deleteChannel }>
-              Delete Channel
-            </button>
-          </div>
-          <div className='channel-action-buttons'>
-            <button className='channel-action-create-btn'
-                    onClick={ this.editChannel }>
-              Edit Channel
-            </button>
-            <button className='channel-action-leave-btn'
-                    onClick={ this.leaveChannel }>
-              Leave Channel
-            </button>
-          </div>
         </section>
 
         <section className='channel-container'>
