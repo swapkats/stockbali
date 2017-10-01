@@ -92,7 +92,7 @@ class UserChannels extends React.Component {
       <section className="user-channels-container">
         <input
           className="user-channels-search-input"
-          placeholder="Search channels"
+          placeholder="Search stocks"
           value={this.state.searchInput}
           onChange={this.handleInput}
           type="text"
@@ -108,14 +108,14 @@ class UserChannels extends React.Component {
             {this.buildChannelItems(this.state.userChannels || this.props.userChannels)}
           </ul> */}
 
-          <button onClick={this.props.openChannelsViewModal}>
+          {/* <button onClick={this.props.openChannelsViewModal}>
             <h4>All Stocks
               <span className="user-channels-count">
                 ({(this.state.allChannels && this.state.allChannels.length)
                   || this.props.allChannels.length})
               </span>
             </h4>
-          </button>
+          </button> */}
 
           <ul className="user-channels-list">
             { this.buildChannelItems(this.state.allChannels || this.props.allChannels) }

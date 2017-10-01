@@ -101,8 +101,17 @@ button {
   position: relative;
 
   background-color: $main-color;
-  color: $main-color-light;
+  // color: $main-color-light;
   transition: all 0.3s ease 0s;
+
+  background: #ECE9E6;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   h4 {
     font-size: 13px;
@@ -114,27 +123,24 @@ button {
     transition: all 0.3s ease 0s;
 
     &:hover {
-      color: white;
       transition: all 0.3s ease 0s;
     }
   }
 
   .user-control-container {
     height: 60px;
-    border: 1px solid $main-color;
+    // border: 1px solid $main-color;
     transition: all 0.3s ease 0s;
 
     &:hover {
-      background-color: $main-color-dark;
+      background-color: rgba(0,0,0,0.1);
       transition: all 0.3s ease 0s;
 
       .user-control-name p {
         transition: all 0.3s ease 0s;
-        color: white;
       }
 
       i {
-        color: white;
         transition: all 0.3s ease 0s;
       }
     }
@@ -146,7 +152,6 @@ button {
       h2 {
         font-size: 17px;
         font-weight: 700;
-        color: white;
       }
     }
 
@@ -164,7 +169,7 @@ button {
       }
 
       p {
-        color: $main-color-light;
+        // color: $main-color-light;
         font-weight: 300;
         font-size: 14px;
         transition: all 0.3s ease 0s;
@@ -189,20 +194,21 @@ button {
 
     .user-channels-wrapper {
       flex: 1;
+      margin-top: 20px;
     }
 
     .user-channels-search-input {
-      margin: 0 15px;
-      background: slategray;
+      background: rgba(0, 0, 0, 0.1);
       border: 0;
       outline: 0;
       padding: 7px 15px;
       border-radius: 2px;
-      width: 142px;
-      color: #fff;
+      width: 159px;
+      font-size: 0.8rem;
+      margin: 0 15px;
 
       &::placeholder {
-        color: #eee;
+        color: #888;
       }
     }
 
@@ -229,15 +235,11 @@ button {
 
       .user-channels-item {
         padding-left: 15px;
-        padding-top: 2px;
-        padding-bottom: 3px;
+        padding-top: 4px;
+        padding-bottom: 5px;
         font-weight: 300;
         font-size: 16px;
-        margin-right: 15px;
         transition: all 0.1s ease 0s;
-
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
 
         span {
           font-size: 16px;
@@ -246,18 +248,17 @@ button {
         }
 
         &:hover {
-          color: white;
-          background-color: $purple-dark;
+          background-color: rgba(0,0,0,0.1);
           transition: all 0.1s ease 0s;
         }
       }
 
       .selected-channel {
-        background-color: $green;
-        color: white;
+        background-color: #444;
+        color: #fff;
 
         &:hover {
-          background-color: $green;
+          background-color: #444 !important;
         }
       }
     }
