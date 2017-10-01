@@ -15,37 +15,27 @@ export const receiveMessage = (message, channel, user) => ({
   type: RECEIVE_MESSAGE,
   message,
   channel,
-  user
+  user,
 });
 
-export const editMessage = (data) => ({
+export const editMessage = data => ({
   type: EDIT_MESSAGE,
-  data
+  data,
 });
 
-export const removeMessage = (id) => ({
+export const removeMessage = id => ({
   type: REMOVE_MESSAGE,
-  id
+  id,
 });
 
-export const updateMessage = (message) => dispatch => {
-  return MessageAPIUtil.updateMessage(message);
-};
+export const updateMessage = message => dispatch => MessageAPIUtil.updateMessage(message);
 
-export const deleteMessage = (id) => dispatch => {
-  return MessageAPIUtil.deleteMessage(id)
-    .then((id) => dispatch(removeMessage(id)));
-};
+export const deleteMessage = id => dispatch => MessageAPIUtil.deleteMessage(id)
+  .then(id => dispatch(removeMessage(id)));
 
-export const addEmoticon = (icon) => dispatch => {
-  return EmoticonAPIUtil.createEmoticon(icon)
-    .then(() => dispatch(closeEmoticonPicker()));
-};
+export const addEmoticon = icon => dispatch => EmoticonAPIUtil.createEmoticon(icon)
+  .then(() => dispatch(closeEmoticonPicker()));
 
-export const removeEmoticon = (id) => dispatch => {
-  return EmoticonAPIUtil.deleteEmoticon(id);
-};
+export const removeEmoticon = id => dispatch => EmoticonAPIUtil.deleteEmoticon(id);
 
-export const fetchGiphyUrl = (query) => dispatch => {
-  return GiphyAPIUtil.fetchGiphyUrl(query);
-}
+export const fetchGiphyUrl = query => dispatch => GiphyAPIUtil.fetchGiphyUrl(query);
