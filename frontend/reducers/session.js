@@ -1,13 +1,13 @@
 import { RECEIVE_ERRORS,
-         RECEIVE_CURRENT_USER,
-         CLEAR_ERRORS,
-         UPDATE_SUBSCRIPTION } from '../actions/session_actions';
+  RECEIVE_CURRENT_USER,
+  CLEAR_ERRORS,
+  UPDATE_SUBSCRIPTION } from '../actions/session_actions';
 
 import merge from 'lodash/merge';
 
 const initialState = {
   currentUser: null,
-  errors: []
+  errors: [],
 };
 
 const SessionReducer = (state = initialState, action) => {
@@ -16,14 +16,14 @@ const SessionReducer = (state = initialState, action) => {
   switch (action.type) {
     case RECEIVE_CURRENT_USER:
       return merge({}, initialState, { currentUser: action.user,
-                                            errors: [] });
+        errors: [] });
 
     case RECEIVE_ERRORS:
       return merge({}, initialState, { errors: action.errors,
-                                       currentUser: null });
+        currentUser: null });
 
     case UPDATE_SUBSCRIPTION:
-      let newState = merge({}, state);
+      const newState = merge({}, state);
       newState.currentUser.subscriptions.push(action.channel);
       return newState;
 

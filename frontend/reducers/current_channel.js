@@ -1,5 +1,5 @@
 import { SWITCH_CHANNEL,
-         SET_CHANNEL } from '../actions/current_channel_actions';
+  SET_CHANNEL } from '../actions/current_channel_actions';
 
 import merge from 'lodash/merge';
 

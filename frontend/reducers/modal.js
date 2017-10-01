@@ -1,16 +1,16 @@
 import { OPEN_CHANNELS_VIEW_MODAL,
-         CLOSE_CHANNELS_VIEW_MODAL,
-         OPEN_CHANNEL_FORM_MODAL,
-         CLOSE_CHANNEL_FORM_MODAL,
-         OPEN_DIRECT_MESSAGE_MODAL,
-         CLOSE_DIRECT_MESSAGE_MODAL,
-         OPEN_EDIT_USER_FORM_MODAL,
-         CLOSE_EDIT_USER_FORM_MODAL,
-         OPEN_USER_MENU_MODAL,
-         CLOSE_USER_MENU_MODAL,
-         OPEN_EMOTICON_PICKER,
-         CLOSE_EMOTICON_PICKER,
-       } from '../actions/modal_actions';
+  CLOSE_CHANNELS_VIEW_MODAL,
+  OPEN_CHANNEL_FORM_MODAL,
+  CLOSE_CHANNEL_FORM_MODAL,
+  OPEN_DIRECT_MESSAGE_MODAL,
+  CLOSE_DIRECT_MESSAGE_MODAL,
+  OPEN_EDIT_USER_FORM_MODAL,
+  CLOSE_EDIT_USER_FORM_MODAL,
+  OPEN_USER_MENU_MODAL,
+  CLOSE_USER_MENU_MODAL,
+  OPEN_EMOTICON_PICKER,
+  CLOSE_EMOTICON_PICKER,
+} from '../actions/modal_actions';
 
 import merge from 'lodash/merge';
 
@@ -41,14 +41,14 @@ const ModalReducer = (state = initialState, action) => {
 
     case OPEN_CHANNEL_FORM_MODAL:
       return merge({}, { channelForm: action.open,
-                         channelFormType: action.formType });
+        channelFormType: action.formType });
 
     case CLOSE_CHANNEL_FORM_MODAL:
       return initialState;
 
     case OPEN_DIRECT_MESSAGE_MODAL:
       return merge({}, { directMessageForm: action.open,
-                         directMessageUser: action.user });
+        directMessageUser: action.user });
 
     case CLOSE_DIRECT_MESSAGE_MODAL:
       return initialState;
@@ -67,7 +67,7 @@ const ModalReducer = (state = initialState, action) => {
 
     case OPEN_EMOTICON_PICKER:
       return merge({}, { emoticonPicker: action.open,
-                         messageId: action.messageId });
+        messageId: action.messageId });
 
     case CLOSE_EMOTICON_PICKER:
       return initialState;

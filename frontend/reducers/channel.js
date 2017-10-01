@@ -1,8 +1,8 @@
 import { RECEIVE_CHANNEL,
-         RECEIVE_MESSAGE } from '../actions/channel_actions';
+  RECEIVE_MESSAGE } from '../actions/channel_actions';
 
 import { REMOVE_MESSAGE,
-         EDIT_MESSAGE } from '../actions/message_actions';
+  EDIT_MESSAGE } from '../actions/message_actions';
 
 import merge from 'lodash/merge';
 import remove from 'lodash/remove';
@@ -24,30 +24,28 @@ const ChannelReducer = (state = initialState, action) => {
         userCount: action.channel.userCount,
         users: action.channel.users,
         displayName: action.channel.display_name,
-        private: action.channel.private
+        private: action.channel.private,
       });
 
     case RECEIVE_MESSAGE:
-      let newState = merge({}, state);
+      const newState = merge({}, state);
       newState.messages.unshift(action.message.messages);
       return newState;
 
     case EDIT_MESSAGE:
-      let editState = merge({}, state);
-      let editStateMessages = editState.messages;
-      let messageIndex = findIndex(editStateMessages, (message) => (message.id === action.data.message.id));
+      const editState = merge({}, state);
+      const editStateMessages = editState.messages;
+      const messageIndex = findIndex(editStateMessages, message => (message.id === action.data.message.id));
 
       editState.messages[messageIndex].content = action.data.message.content;
       editState.messages[messageIndex].emoticons = action.data.emoticons;
       return editState;
 
     case REMOVE_MESSAGE:
-      let copiedState = merge({}, state);
-      let copiedMessages = copiedState.messages;
+      const copiedState = merge({}, state);
+      const copiedMessages = copiedState.messages;
 
-      remove(copiedMessages, (copiedMessage) => {
-        return copiedMessage.id === action.id;
-      });
+      remove(copiedMessages, copiedMessage => copiedMessage.id === action.id);
 
       return merge({}, copiedState, { messages: copiedMessages });
 

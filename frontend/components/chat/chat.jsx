@@ -81,12 +81,7 @@ const mapStateToProps = (state, ownProps) => {
            channel: state.channel };
 };
 
-const mapDispatchToProps = (dispatch, ownProps) => ({
-  fetchChannel: (userId, channelId) => dispatch(fetchChannel(userId, channelId)),
-  setChannel: (channel) => dispatch(setChannel(channel))
-});
-
 export default connect(
   mapStateToProps,
-  mapDispatchToProps
+  { fetchChannel, setChannel }
 )(Chat);

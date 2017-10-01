@@ -10,12 +10,12 @@ const MessageReducer = (state = initialState, action) => {
   switch (action.type) {
     case SWITCH_CHANNEL:
       return merge({}, initialState, { id: action.id,
-                                       name: action.name,
-                                       description: action.description });
+        name: action.name,
+        description: action.description });
     case SET_CHANNEL:
       return merge({}, initialState, { id: action.id,
-                                       name: action.name,
-                                       description: action.description });
+        name: action.name,
+        description: action.description });
 
     default:
       return state;

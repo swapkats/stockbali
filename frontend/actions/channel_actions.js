@@ -48,13 +48,10 @@ export const fetchPublicChannels = () =>
   };
 
 export const fetchChannel = (userId, channelId) =>
-  dispatch =>{
-    console.log('bleh');
-
-    ChannelAPIUtil.fetchChannel(userId, channelId)
-      .then(
-        channel => (dispatch(receiveChannel(channel))),
-      );}
+  dispatch =>
+    ChannelAPIUtil.fetchChannel(userId, channelId).then(
+      channel => (dispatch(receiveChannel(channel))),
+    );
 
 export const createChannel = channel =>
   dispatch =>
