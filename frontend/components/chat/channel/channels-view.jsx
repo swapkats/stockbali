@@ -13,7 +13,6 @@ class ChannelsView extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      channels: [],
       searchInput: ''
     };
 
@@ -21,12 +20,6 @@ class ChannelsView extends React.Component {
     this.joinChannel = this.joinChannel.bind(this);
     this.handleInput = this.handleInput.bind(this);
     this.matches = this.matches.bind(this);
-  }
-
-  componentDidMount() {
-    this.props.fetchPublicChannels().then((data) => {
-      this.setState({ channels: data.channels });
-    });
   }
 
   componentWillReceiveProps(newProps) {
@@ -68,7 +61,7 @@ class ChannelsView extends React.Component {
   }
 
   matches() {
-    return this.state.channels.filter((channel) =>
+    return this.props.channels.filter((channel) =>
       channel.name.includes(this.state.searchInput)
     );
   }
@@ -159,23 +152,13 @@ const style = {
 const mapStateToProps = (state, ownProps) => ({
   allChannels: Object.keys(state.allChannels).map((i) => state.allChannels[i]),
   channelsView: state.modal.channelsView,
+  channels: state.channels,
   userId: state.session.currentUser.id,
   subscriptionIds: Object.keys(state.session.currentUser.subscriptions)
                          .map((i) => (state.session.currentUser.subscriptions[i].id))
 });
 
-const mapDispatchToProps = (dispatch, ownProps) => ({
-  fetchPublicChannels: () => dispatch(fetchPublicChannels()),
-  setChannel: (channel) => dispatch(setChannel(channel)),
-
-  closeChannelsViewModal: () => dispatch(closeChannelsViewModal()),
-  openChannelsViewModal: () => dispatch(openChannelsViewModal()),
-
-  updateSubscription: (channel) => dispatch(updateSubscription(channel)),
-  createPublicSubscription: (channelId) => dispatch(createPublicSubscription(channelId))
-});
-
 export default connect(
   mapStateToProps,
-  mapDispatchToProps
+  { fetchPublicChannels, setChannel, closeChannelsViewModal, openChannelsViewModal, updateSubscription, createPublicSubscription }
 )(ChannelsView);

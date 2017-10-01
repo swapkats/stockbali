@@ -6,6 +6,7 @@ import ChannelReducer from './channel';
 import AllChannelsReducer from './all_channels';
 import ModalReducer from './modal';
 import UserReducer from './user';
+import loading from './loading';
 
 const RootReducer = combineReducers({
   session: SessionReducer,
@@ -14,6 +15,7 @@ const RootReducer = combineReducers({
   modal: ModalReducer,
   allChannels: AllChannelsReducer,
   users: UserReducer,
+  loading,
 });
 
 export default RootReducer;

@@ -22,7 +22,6 @@ class DirectMessage extends React.Component {
     super(props);
 
     this.state = {
-      users: [],
       selectedUsers: this.props.givenUser,
       searchInput: ''
     };
@@ -36,9 +35,7 @@ class DirectMessage extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchUsers().then((data) => {
-      this.setState({ users: data.users });
-    });
+    this.props.fetchUsers();
   }
 
   componentWillReceiveProps(newProps) {
@@ -127,7 +124,7 @@ class DirectMessage extends React.Component {
   }
 
   matches() {
-    return this.state.users.filter((user) => user.username.includes(this.state.searchInput));
+    return this.props.users.filter((user) => user.username.includes(this.state.searchInput));
   }
 
   selectUser(user) {
@@ -273,25 +270,14 @@ const mapStateToProps = (state, ownProps) => {
       allChannels: state.allChannels,
       directMessageForm: state.modal.directMessageForm,
       currentUser: state.session.currentUser,
+      users: state.users,
       subscriptionIds: Object.keys(state.session.currentUser.subscriptions)
                              .map((i) => (state.session.currentUser.subscriptions[i].id))
     };
   }
 };
 
-const mapDispatchToProps = (dispatch, ownProps) => ({
-  fetchUsers: () => dispatch(fetchUsers()),
-  getUser: (userId) => dispatch(getUser(userId)),
-
-  createChannel: (channel) => dispatch(createChannel(channel)),
-  setChannel: (channel) => dispatch(setChannel(channel)),
-  fetchChannel: (userId, channelId) => dispatch(fetchChannel(userId, channelId)),
-
-  openDirectMessageModal: () => dispatch(openDirectMessageModal()),
-  closeDirectMessageModal: () => dispatch(closeDirectMessageModal()),
-});
-
 export default connect(
   mapStateToProps,
-  mapDispatchToProps
+  { fetchUsers, getUser, createChannel, setChannel, fetchChannel, openDirectMessageModal, closeDirectMessageModal }
 )(DirectMessage);

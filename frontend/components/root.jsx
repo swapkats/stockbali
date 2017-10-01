@@ -18,13 +18,13 @@ const Root = ({ store }) => {
   };
 
   return (
-    <Provider store={ store }>
-      <Router history={ hashHistory }>
-        <Route path='/' component={ App }>
-          <Route path='/login' component={ SessionForm } onEnter={ redirectIfLoggedIn } />
-          <Route path='/signup' component={ SessionForm } onEnter={ redirectIfLoggedIn } />
+    <Provider store={store}>
+      <Router history={hashHistory}>
+        <Route path="/" component={App}>
+          <Route path="/login" component={SessionForm} onEnter={redirectIfLoggedIn} />
+          <Route path="/signup" component={SessionForm} onEnter={redirectIfLoggedIn} />
         </Route>
-        <Route path='/chat' component={ Chat } onEnter={ redirectUnlessLoggedIn }/>
+        <Route path="/chat" component={Chat} onEnter={redirectUnlessLoggedIn}/>
       </Router>
     </Provider>
   );

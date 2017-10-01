@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import { fetchChannel } from '../../actions/channel_actions';
+import { fetchChannel, fetchPublicChannels } from '../../actions/channel_actions';
 import { setChannel } from '../../actions/current_channel_actions';
 
 import Spinner from './spinner';
@@ -48,6 +48,7 @@ class Chat extends React.Component {
   }
 
   componentWillMount() {
+    this.props.fetchPublicChannels();
     this.props.fetchChannel(this.props.user.id, this.props.user.current_channel)
               .then(() => {
                 const channel = {
@@ -60,28 +61,29 @@ class Chat extends React.Component {
   }
 
   render() {
-    if (this.props.user && this.props.channel.name) {
-      return (
-        <div className='chat-container'>
-          <UserSection />
-          <MainSection />
-          <ChannelSection />
-        </div>
-      );
-    } else {
+    if (this.props.loading === 'CHAT_SCREEN') {
       return (
         <Spinner />
       );
     }
+
+    return (
+      <div className='chat-container'>
+        <UserSection />
+        <MainSection />
+        <ChannelSection />
+      </div>
+    );
   }
 }
 
-const mapStateToProps = (state, ownProps) => {
-  return { user: state.session.currentUser,
-           channel: state.channel };
-};
+const mapStateToProps = state => ({
+  user: state.session.currentUser,
+  channel: state.channel,
+  loading: state.loading.type
+});
 
 export default connect(
   mapStateToProps,
-  { fetchChannel, setChannel }
+  { fetchChannel, setChannel, fetchPublicChannels }
 )(Chat);

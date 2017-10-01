@@ -33,7 +33,6 @@ class UserChannels extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchPublicChannels();
   }
 
   componentWillUnmount() {

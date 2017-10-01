@@ -215,17 +215,7 @@ const mapStateToProps = (state, ownProps) => ({
   channel: state.channel
 });
 
-const mapDispatchToProps = (dispatch, ownProps) => ({
-  openDirectMessageModal: (user) => dispatch(openDirectMessageModal(user)),
-  openChannelFormModal: (formType) => dispatch(openChannelFormModal(formType)),
-  deleteSubscription: (channelId) => dispatch(deleteSubscription(channelId)),
-  fetchChannel: (userId, channelId) => dispatch(fetchChannel(userId, channelId)),
-  deleteChannel: (channelId) => dispatch(deleteChannel(channelId)),
-  fetchPublicChannels: () => dispatch(fetchPublicChannels()),
-  getUser: (id) => dispatch(getUser(id))
-});
-
 export default connect(
   mapStateToProps,
-  mapDispatchToProps
+  { openDirectMessageModal, openChannelFormModal, deleteChannel, fetchChannel, deleteChannel, fetchPublicChannels, getUser }
 )(ChannelSection);
