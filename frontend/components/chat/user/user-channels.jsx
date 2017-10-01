@@ -98,7 +98,7 @@ class UserChannels extends React.Component {
           type="text"
         />
         <div className="user-channels-wrapper">
-          <button onClick={this.props.openChannelsViewModal}>
+          {/* <button onClick={this.props.openChannelsViewModal}>
             <h4>Watchlist
               <span className="user-channels-count">({ channelCount })</span>
             </h4>
@@ -106,7 +106,7 @@ class UserChannels extends React.Component {
 
           <ul className="user-channels-list">
             {this.buildChannelItems(this.state.userChannels || this.props.userChannels)}
-          </ul>
+          </ul> */}
 
           <button onClick={this.props.openChannelsViewModal}>
             <h4>All Stocks
