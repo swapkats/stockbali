@@ -90,13 +90,15 @@ class UserChannels extends React.Component {
     const channelCount = this.props.user.subscriptions.length;
     return (
       <section className="user-channels-container">
-        <input
-          className="user-channels-search-input"
-          placeholder="Search stocks"
-          value={this.state.searchInput}
-          onChange={this.handleInput}
-          type="text"
-        />
+        <div className="user-channels-search-input-wrap">
+          <input
+            className="user-channels-search-input"
+            placeholder="Search stocks"
+            value={this.state.searchInput}
+            onChange={this.handleInput}
+            type="text"
+          />
+        </div>
         <div className="user-channels-wrapper">
           {/* <button onClick={this.props.openChannelsViewModal}>
             <h4>Watchlist

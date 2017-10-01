@@ -10,7 +10,7 @@ bundle install
 npm install
 
 Start development server:
-npm run dev
+webpack --watch
 rails s
 
 Linting:
