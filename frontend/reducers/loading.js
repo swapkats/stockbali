@@ -5,17 +5,15 @@ const initialState = {
 };
 
 const LoadingReducer = (state = initialState, action) => {
+  Object.freeze(state);
+
   switch (action.type) {
     case START_LOADING:
-      return {
-        ...state,
-        type: action.loading,
-      };
+      return merge(state, { type: action.loading });
     case STOP_LOADING:
-      return {
-        ...state,
+      return merge(state, {
         type: 'none',
-      };
+      });
     default:
       return state;
   }
